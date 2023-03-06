@@ -1,0 +1,146 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    /* background-image: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fmedia.istockphoto.com%2Fid%2F1364031269%2Fphoto%2Fnew-york-city-skyline-with-manhattan-financial-district-world-trade-center-and-orange-and.jpg%3Fb%3D1%26s%3D170667a%26w%3D0%26k%3D20%26c%3D3PMLWAt7x4u9feZ_HJQxfUl-aZZhLx23UIjk2iE4fvc%3D&imgrefurl=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fnyc&tbnid=12zjG6s1HzGBcM&vet=12ahUKEwjt05WE9rj9AhXsLLcAHaleBeEQMygVegUIARCHAg..i&docid=xDbjD12VFXlu1M&w=509&h=339&q=unsplash%20&ved=2ahUKEwjt05WE9rj9AhXsLLcAHaleBeEQMygVegUIARCHAg");
+    
+    background-color: #0c675a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; */
+    margin-top: 30vh;
+    background: lightblue url("https://images.unsplash.com/photo-1549778399-f94fd24d4697?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80") no-repeat fixed center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    /* border-radius: 10px; */
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 10;
+}
+
+#content {
+    padding: 25px 25px
+}
+
+th {
+    font-weight: bold;
+    color: #60a9ff;
+}
+
+tr {
+    border: 1px solid;
+    border: 1px solid rgb(163, 163, 167);
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+button {
+    margin: 15px;
+    width: 10rem;
+}
+
+label {
+    padding-bottom: 1rem;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-top: 25px;
+}
+
+.text-end {
+    text-align: end;
+    font-weight: 500;
+    color: crimson;
+    text-transform: none;
+}
+
+#tag {
+    color: darkorange;
+}
+
+#voteStatus {
+    padding: 3rem;
+    text-transform: none;
+    background-color: #dff3e3;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    text-decoration: rgb(4, 247, 166);
+    color: darkgreen;
+}
+
+#myAccount {
+    padding-top: 1rem;
+    color: dimgray;
+}
+
+#accountTag {
+    font-weight: bold;
+    font-size: medium;
+}
+
+#note {
+    font-size: small;
+    color: red;
+    text-transform: none;
+}
