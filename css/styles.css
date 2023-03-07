@@ -90,7 +90,7 @@ h1 {
 button {
   margin: 0;
   position: absolute;
-  top: 50%;
+  top: 60%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   --text-base: 277deg, 55%, 40%;
