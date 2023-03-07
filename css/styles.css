@@ -46,13 +46,7 @@ html {
 }
 
 body {
-    /* background-image: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fmedia.istockphoto.com%2Fid%2F1364031269%2Fphoto%2Fnew-york-city-skyline-with-manhattan-financial-district-world-trade-center-and-orange-and.jpg%3Fb%3D1%26s%3D170667a%26w%3D0%26k%3D20%26c%3D3PMLWAt7x4u9feZ_HJQxfUl-aZZhLx23UIjk2iE4fvc%3D&imgrefurl=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fnyc&tbnid=12zjG6s1HzGBcM&vet=12ahUKEwjt05WE9rj9AhXsLLcAHaleBeEQMygVegUIARCHAg..i&docid=xDbjD12VFXlu1M&w=509&h=339&q=unsplash%20&ved=2ahUKEwjt05WE9rj9AhXsLLcAHaleBeEQMygVegUIARCHAg");
-    
-    background-color: #0c675a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; */
+
     margin-top: 30vh;
     background: lightblue url("https://images.unsplash.com/photo-1549778399-f94fd24d4697?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80") no-repeat fixed center;
     background-size: cover;
@@ -94,8 +88,64 @@ h1 {
 }
 
 button {
-    margin: 15px;
-    width: 10rem;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  --text-base: 277deg, 55%, 40%;
+  --text-hover: 307deg, 72%, 86%;
+  --shadow-start: 52deg, 100%, 72%;
+  --shadow-end: 282deg, 90%, 50%;
+  --shadow-inner: 277deg, 90%, 62%;
+  all: unset;
+  color: hsla(var(--text-base), 1);
+  font: 700 1.125rem/1.2 Raleway, sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.85em;
+  max-width: 100%;
+  width: 12em;
+  background: inherit;
+  background-clip: padding-box;
+  border: 5px solid hsla(var(--text-base), 1);
+  border-radius: 2em;
+  cursor: pointer;
+  position: relative;
+  transition: 0.25s ease-out;
+}
+
+button::before, button::after {
+  content: "";
+  border-radius: inherit;
+  transition: inherit;
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+button::before {
+  inset: -0.2em;
+  z-index: -1;
+  background: linear-gradient(hsla(var(--shadow-start), 1), hsla(var(--shadow-end), 1));
+  filter: blur(1.2em) saturate(1.2);
+  transform-origin: bottom;
+  transform: scaleY(0.5);
+  opacity: 0;
+}
+button::after {
+  box-shadow: inset 0 0 0 1px #151111, 0 0 0 4px rgba(20, 20, 20, 0.7), 1px 1px 0 4px #171616;
+  mix-blend-mode: overlay;
+  opacity: 0;
+}
+button:hover, button:focus {
+  color: hsla(var(--text-hover), 1);
+  border-color: transparent;
+  box-shadow: inset 0 1.4em 0 hsla(var(--shadow-inner), 0.1), inset 0 0 1.4em hsla(var(--shadow-inner), 0.32), 0 1px 1px hsla(var(--shadow-inner), 0.32);
+}
+button:hover::before, button:hover::after, button:focus::before, button:focus::after {
+  transform: none;
+  opacity: 1;
 }
 
 label {
