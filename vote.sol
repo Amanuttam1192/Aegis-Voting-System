@@ -124,7 +124,6 @@ contract Ballot {
         // record that voter has voted
         voters[msg.sender] = true;
 
-        // update candidate vote Count
         candidates[_candidateId].voteCount++;
 
         // trigger voted event
